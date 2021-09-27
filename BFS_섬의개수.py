@@ -12,7 +12,6 @@ def solution():
     queue = deque() # 큐 선언
     for i in range(h): # 시작점이 명시되어 있지 않음
         for j in range(w):
-            #print(i, j)
             if graph[i][j] == 1:
                 queue.append([i,j]) # 첫 노드 삽입
                 graph[i][j] = 0 # 및 방문 처리
