@@ -17,6 +17,7 @@ def solution():
     visited[parent] = 1 # 첫 노드 방문 처리
     while queue:
         n = queue.popleft() # 노드 pop
+        if n == child: break # pop 했을 때 찾고자 하는 자식이 나온 경우 break # 해당 구문 없어도 상관없지만 실행속도 향상됨
         for i in graph[n]:
             if visited[i] == 0:
                 queue.append(i) # 다음 노드 삽입 및 방문 처리
