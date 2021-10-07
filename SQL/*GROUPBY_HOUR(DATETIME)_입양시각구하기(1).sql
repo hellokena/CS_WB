@@ -1,7 +1,6 @@
 -- 09:00부터 19:59까지 각 시간대별로 입양이 몇건이나 발생했는지 조회하는 SQL문
 -- 결과는 시간대 순으로 정렬
 
-
 -- SELECT * FROM ANIMAL_OUTS
 -- ORDER BY HOUR(DATETIME);
 
