@@ -1,0 +1,16 @@
+-- ANIMAL_INS 테이블에서 이름에 'el'이 들어간 개의 ANIMAL_ID와 NAME 출력
+-- 단, 이름의 대소문자는 구분하지 않으며, NAME 순으로 정렬
+
+-- MySQL에서는 대소문자 구분하지 않는다
+
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS
+WHERE NAME LIKE '%el%'
+AND ANIMAL_TYPE = 'Dog'
+ORDER BY NAME;
+
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS
+WHERE LOWER(NAME) LIKE '%el%'
+AND ANIMAL_TYPE = 'Dog'
+ORDER BY NAME;
