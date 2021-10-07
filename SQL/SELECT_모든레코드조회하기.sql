@@ -1,0 +1,4 @@
+-- ANIMAL_INS 테이블의 모든 정보를 ANIMAL_ID 순으로 정렬하여 출력
+SELECT *
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID;
