@@ -1,0 +1,13 @@
+-- ANIMAL_INS 테이블에서 중성화 여부 COLUMN을 만들어 반환하기
+
+-- IF 문
+SELECT ANIMAL_ID, NAME,
+IF (SEX_UPON_INTAKE LIKE '%Neutered%' OR SEX_UPON_INTAKE LIKE '%Spayed%', 'O', 'X') -- 괄호 잘 보기
+AS '중성화'
+FROM ANIMAL_INS;
+
+-- CASE 문
+SELECT ANIMAL_ID, NAME, 
+CASE WHEN SEX_UPON_INTAKE LIKE '%Neutered%' or SEX_UPON_INTAKE LIKE '%Spayed%' -- CASE WHEN
+THEN 'O' ELSE 'X' END AS '중성화' -- THEN - ELSE - END
+FROM ANIMAL_INS
