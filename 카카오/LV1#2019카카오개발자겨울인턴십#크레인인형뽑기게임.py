@@ -31,7 +31,8 @@ def solution(board, moves):
   # 간과한것
   # 1. transpose 할 필요없음
   # 2. stack해서 마지막것 두개만 비교하면 됨(굳이 처음부터 다시 비교 안해도됨) => 시간 낭비
-  => 아래 코드가 효율성에서 갑임
+
+  # => 아래 코드가 효율성에서 갑임
   
    def solution(board, moves):
     stack = []
