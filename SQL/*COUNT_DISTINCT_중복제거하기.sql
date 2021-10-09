@@ -5,3 +5,4 @@ FROM ANIMAL_INS;
 
 -- COUNT(*) 하면 NULL이 포함되지만
 -- COUNT(DISTINCT COL) 하면 NULL이 포함되지 않음
+-- COUNT(COL)해도 NULL은 포함되지 않음
